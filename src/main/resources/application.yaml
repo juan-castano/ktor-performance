@@ -1,0 +1,10 @@
+ktor:
+    application:
+        modules:
+            - com.example.ApplicationKt.module
+    deployment:
+        port: 8080
+        shareWorkGroup: true
+        workerGroupSize: 16
+        connectionGroupSize: 2
+        callGroupSize: 5
